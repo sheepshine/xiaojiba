@@ -2,6 +2,7 @@
 import sys
 import MySQLdb
 
+
 class TransferMoney(object):
     def __init__(self, conn):
         self.conn = conn
@@ -70,7 +71,8 @@ class TransferMoney(object):
         finally:
             cursor.close()
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     source_accid = sys.argv[1]
     target_accid = sys.argv[2]
     money = sys.argv[3]
